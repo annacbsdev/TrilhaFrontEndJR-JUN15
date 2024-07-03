@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  display: flex ;
+}
+
+.profile {
+  width: 540px;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  display: flex ;
+  justify-content: space-between;
+  border-top: 64px solid #e53939;
+  flex-grow: 1;
+}
+
+@media(max-width: 1024px) {
+
+  .App {
+    flex-direction: column;
+    border-top: 64px solid #e53939;
+  }
+
+  .profile {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 40px auto;
+  }
+
+  .content {
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,57 @@
+
+.description {
+    width: 80%;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.description p {
+    margin-bottom: 40px;
+}
+
+.personal-interests {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.interest {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.interest p {
+    font-size: 14px;
+    text-align: left;
+    width: 400px;
+}
+
+.interest img {
+    width: 200px;
+
+}
+
+.collaboration {
+    width: 400px;
+}
+
+@media(max-width: 600px) {
+    .description {
+        width: 100%;
+    }
+
+    .interest {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .interest p{
+        width: 100%;
+    }
+
+    .collaboration {
+        width: 300px;
+    }
+}
